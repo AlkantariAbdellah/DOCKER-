@@ -72,6 +72,10 @@ Run a container based on that image :
 
    > docker run --rm -p 80:80 -d Name_of_the_image  [ --rm remove the container when it's stopped , -p use the port 80 on the localhost to display the app env on the browser ,  -d  detached mode  ]
 
+Run a container with the interactive mode :
+
+   > docker run -it  Image_name  [  -i  interactive mode ,  -t  tty means the terminal ]
+
 List images:
 
    > docker images  /  docker image ls 
