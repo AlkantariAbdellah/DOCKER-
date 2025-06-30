@@ -18,8 +18,7 @@ This repository contains:
 
 Make sure you have:
 
-- [Docker](https://docs.docker.com/get-docker/) installed and running
-- Basic familiarity with Docker commands
+- [Docker](https://docs.docker.com/get-docker/) installed and running  the engine .
 
 ---
 
