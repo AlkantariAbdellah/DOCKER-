@@ -64,17 +64,17 @@ This builds the image named my-node-app using the Dockerfile in this repo.
 
 🛠️ Common Docker Commands
 
-Build an image :
+Build an image based on a dockerfile :
 
    > docker build -t Name-wanted .    [ -t tag ]
 
-Run a container based on that image :
+Run a container from an image   :
 
-   > docker run --rm -p 80:80 -d Name_of_the_image  [ --rm remove the container when it's stopped , -p use the port 80 on the localhost to display the app env on the browser ,  -d  detached mode  ]
+   > docker run --rm -p 80:80 -d --name Container_name Name_of_the_image  [ --rm remove the container when it's stopped , -p use the port 80 on the localhost to display the app env on the browser , --name specify the Container_name , -d  detached mode  ]
 
-Run a container with the interactive mode :
+Run a container from an image  with the interactive mode :
 
-   > docker run -it  Image_name  [  -i  interactive mode ,  -t  tty means the terminal ]
+   > docker run -it  Image_name / Image_Id  [  -i  interactive mode ,  -t  tty means the terminal ]
 
 List images:
 
@@ -91,6 +91,10 @@ List all containers (even those not utilized):
 Stop a running container:
 
    > docker stop <container_id> / <container_name>
+
+Start a stopped container :
+
+   > docker start <container_id> / <container_name>
 
 Remove a container:
 
