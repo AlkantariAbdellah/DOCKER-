@@ -48,19 +48,19 @@ This builds the image named my-node-app using the Dockerfile in this repo.
 
    ###  Dockerfile 
 
-   FROM node ( The base image would be node  ) 
+   FROM node       ( The base image would be node  ) 
     
-   WORKDIR /app  (  Working directory of the container , all the copy , run , cmd commands run on it   )
+   WORKDIR /app        (  Working directory of the container , all the copy , run , cmd commands run on it   )
     
-   COPY package.json /app  (  Copy the package.json file on the working directory ) Optimization of dockerfile Image layers 
+   COPY package.json /app        (  Copy the package.json file on the working directory ) Optimization of dockerfile Image layers 
     
-   RUN npm install   (  Execute the command npm install if necessary , Installs the dependencies listed in package.json inside the container environment  )
+   RUN npm install         (  Execute the command npm install if necessary , Installs the dependencies listed in package.json inside the container environment  )
     
-   COPY . /app  (  Copy all the content of the working directory "the code"  into /app the container )
+   COPY . /app        (  Copy all the content of the working directory "the code"  into /app the container )
     
-   EXPOSE 80   (  Expose the internal  port of the container to the port 80 'HTTP' , means the container listens on that port ) # Optional #
+   EXPOSE 80         (  Expose the internal  port of the container to the port 80 'HTTP' , means the container listens on that port ) # Optional #
 
-   CMD ["node","server.js"]
+   CMD ["node","server.js"]         (  Launch the app when the container starts  )
 
 🛠️ Common Docker Commands
 
