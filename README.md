@@ -74,7 +74,7 @@ Run a container based on that image :
 
 List images:
 
-   > docker images
+   > docker images  /  docker image ls 
    
 List running containers:
 
@@ -86,19 +86,20 @@ List all containers (even those not utilized):
    
 Stop a running container:
 
-   > docker stop <container_id>
+   > docker stop <container_id> / <container_name>
 
 Remove a container:
 
-   > docker rm <container_id>
+   > docker rm <container_id>  / <container_name>
+   
 Remove an image:
  
-   > docker rmi my-node-app
+   > docker rmi my-node-app / <Image_id>
 
 Remove all unutilized containers :
 
-   > docker container prune
+   > docker containers prune
 
-Remove all unutilized  images :
+Remove all unused images :
 
-   >  docker images prune 
+   >  docker image prune 
