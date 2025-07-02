@@ -108,6 +108,6 @@ Remove all unutilized containers :
 
    > docker containers prune
 
-Remove all unused images :
+Remove all unused images : ( Expect tagged ones )
 
-   >  docker image prune 
+   >  docker image prune /  (  should add option -a to remove the tagged ones too )
